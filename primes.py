@@ -3,7 +3,7 @@
 
 def primes(number_of_primes):
     if number_of_primes <= 0:
-        raise ValueError
+        raise ValueError(f"Number of primes must be at least 1, not {number_of_primes}")
     list = []
     current_integer = 0
     while len(list) < number_of_primes:
